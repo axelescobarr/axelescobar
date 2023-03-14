@@ -1,0 +1,157 @@
+.header {
+    background-image: url('../../imagenes/pared2.jpg');
+    background-size: cover;
+    position: fixed;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    z-index: 350;
+  
+}
+
+.headerNone{
+    overflow: hidden;
+    background-image: url('../../imagenes/pared.jpg');
+    background-size: cover;
+    position: fixed;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-position: center;
+    height: 0px;
+    transition: 2s;
+    z-index: 350;
+
+}
+
+.logoContainer{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15vh;
+    margin-top: 0;
+    /* background-color: aliceblue; */
+    /* filter: blur(20px); */
+    height: 8vh;
+    border-bottom: 3px solid rgb(241, 148, 67);
+    position: relative;
+    /* box-shadow: 0px 9px 21px -4px rgba(47,248,221,0.96);
+    -webkit-box-shadow: 0px 9px 21px -4px rgba(47,248,221,0.96);
+    -moz-box-shadow: 0px 9px 21px -4px rgba(47,248,221,0.96); */
+    backdrop-filter: blur(5px);
+}
+
+.logo{
+    height: 8vh;
+}
+
+.headerContent{
+    /* background-color: rgba(116, 59, 169, 0.708);  */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+} 
+
+.text{
+    margin-bottom: 20vh;
+    font-family: 'Mynerve', cursive;
+    font-size: 1.5rem;
+    background-color: rgb(225, 187, 154);
+    color: black;
+    width: 40%;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid rgb(241, 148, 67);
+    box-shadow: 0px 0px 41px -4px rgb(241, 148, 67);
+    -webkit-box-shadow: 0px 0px 41px -4px rgb(241, 148, 67);
+    -moz-box-shadow: 0px 0px 41px -4px rgb(241, 148, 67);
+
+}
+.text:hover{
+    animation-name: swing;
+        -webkit-animation-name: swing;
+        -moz-animation-name: swing;
+    animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+}
+
+    @keyframes swing {
+        20% {transform: rotate3d(0, 0, 1, 15deg);}
+        40% {transform: rotate3d(0, 0, 1, -10deg);}
+        60% {transform: rotate3d(0, 0, 1, 5deg);}
+        80% {transform: rotate3d(0, 0, 1, -5deg);}
+        to  {transform: rotate3d(0, 0, 1, 0deg);}
+    }
+
+.foto{
+    width: 20vh;
+    border-radius: 50%;
+}
+
+.nombre{
+    font-size: 2.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.descri{
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btn{
+    position: absolute;
+    top: 75vh;
+    left: 42%;
+    background-color: rgba(0, 255, 255, 0);
+    border: none;
+    margin-bottom: 1rem;
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+    color: black;
+    padding: 0.7rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0.2rem;
+    width: 32vh;
+    height: 13.5vh;
+    transition: 300ms ease-out;
+
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(225, 187, 154);
+    border: 3px solid rgb(225, 187, 154);
+}
+
+@media (max-width: 768px){
+    .text{
+        width: 70%;
+        flex-direction: column;
+        margin-bottom: 25vh;
+    }
+    .logoContainer{
+         margin-bottom: 15rem;
+    }
+}
+
+.ilustracion{
+    width: 40vh;
+}
+  
