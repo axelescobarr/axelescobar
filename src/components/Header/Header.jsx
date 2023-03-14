@@ -38,7 +38,6 @@ function Header() {
             <img className={styles.ilustracion} src={ilus} alt='ilus'/>
             <button onClick={stateHandler} className={styles.btn}>
               <h2 className=' vermas animate__animated animate__bounceInLeft'>Ver más</h2>
-              <Icon icon="material-symbols:arrow-back-ios-rounded" width="20" rotate={3} />
             </button>
          </div>
         </div>
