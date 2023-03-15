@@ -3,10 +3,9 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    /* border-bottom: 2px solid rgb(108, 15, 196); */
     position: fixed;
     z-index: 300;
-    background-color: white;
+    backdrop-filter: blur(10px);
     height: 8vh;
   }
   
@@ -50,20 +49,20 @@
 
   
   .navLinks a {
-    color: rgb(241, 148, 67);
+    color: rgb(232, 140, 60);
     text-decoration: none;
     transition: color 0.15s ease-in-out;
-    /* border: 2px solid rgb(108, 15, 196); */
     width: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
   } 
   
    .navLinks a:hover {
     color: rgb(255, 255, 255);
-    background-color: rgb(241, 148, 67);
+    background-color: rgb(232, 140, 60);
 
   } 
   .navLinksMin a {
@@ -76,7 +75,11 @@
     justify-content: center;
     align-items: center;
     border-radius: 1rem;
-  } 
+  }
+
+  .navLinks:first-child{
+    width: 8rem;
+  }
   
    .navLinksMin a:hover {
     color: rgb(255, 255, 255);
@@ -178,6 +181,22 @@
 
       }
   }
+
+.linkCV{
+  padding: 0.5rem;
+  border: 3px solid rgb(232, 140, 60);
+  color: rgb(232, 140, 60);
+  border-radius: 0.8rem;
+  margin-left: 80vh;
+}
+
+.linkCV:hover{
+  color: aliceblue;
+  background-color: rgb(232, 140, 60);
+  transition: 0.5s;
+}
+
+
 
 
 

@@ -8,6 +8,7 @@ import rick from '../../imagenes/rickAndMorty.JPG';
 import wikifoods from '../../imagenes/wikifoods.JPG';
 import { Icon } from '@iconify/react';
 import { useState } from 'react';
+import { Mailer } from '../Mailer/Mailer';
 
 function Main() {
 
@@ -115,12 +116,12 @@ function Main() {
                 <p className={styles.containerText}>Me gusta inspirarme y crear diseños de todo tipo, siempre basados en tener la mejor UX posible</p>
                 <h4 className={styles.containerTecnologias}>Tecnologias</h4>
                 <div className={styles.render}>
-                    <button onClick={designLesshandler} className={styles.btnLogo}><Icon className={styles} icon="material-symbols:arrow-back-ios-rounded" width="18" /></button>
+                    <button onClick={designLesshandler} className={styles.btnLogo}><Icon className={styles} icon="material-symbols:arrow-back-ios-rounded" width="18" color="black" /></button>
                     <div className={styles.rendering}>
                         {diseno[disenoIndex].icon}
                         {diseno[disenoIndex].name}
                     </div>
-                    <button onClick={designMorehandler} className={styles.btnLogo}><Icon icon="material-symbols:arrow-back-ios-rounded" width="20" rotate={2} /></button>
+                    <button onClick={designMorehandler} className={styles.btnLogo}><Icon icon="material-symbols:arrow-back-ios-rounded" width="20" rotate={2} color="black" /></button>
                 </div>
             </div>
             <div className={styles.contenedor}>
@@ -131,12 +132,12 @@ function Main() {
                 <p className={styles.containerText}>Aqui creo todo lo que diseño, me gusta tener un codigo limpio y ordenado, con muchas animaciones</p>
                 <h4 className={styles.containerTecnologias}>Tecnologias</h4>
                 <div className={styles.render}>
-                    <button onClick={frontLesshandler} className={styles.btnLogo}><Icon className={styles} icon="material-symbols:arrow-back-ios-rounded" width="18" /></button>
+                    <button onClick={frontLesshandler} className={styles.btnLogo}><Icon className={styles} icon="material-symbols:arrow-back-ios-rounded" width="18" color="black"/></button>
                     <div className={styles.rendering}>
                         {front[frontIndex].icon}
                         {front[frontIndex].name}
                     </div>
-                    <button onClick={frontMorehandler} className={styles.btnLogo}><Icon icon="material-symbols:arrow-back-ios-rounded" width="20" rotate={2} /></button>
+                    <button onClick={frontMorehandler} className={styles.btnLogo}><Icon icon="material-symbols:arrow-back-ios-rounded" width="20" rotate={2} color="black"/></button>
                 </div>
             </div>
             <div className={styles.contenedor}>
@@ -147,12 +148,12 @@ function Main() {
                 <p className={styles.containerText}>Me gusta el codigo con buenas practicas, siempre diseñar los modelos de la BDD y las rutas antes.</p>
                 <h4 className={styles.containerTecnologias}>Tecnologias</h4>
                 <div className={styles.render}>
-                    <button onClick={backLesshandler} className={styles.btnLogo}><Icon className={styles} icon="material-symbols:arrow-back-ios-rounded" width="18" /></button>
+                    <button onClick={backLesshandler} className={styles.btnLogo}><Icon className={styles} icon="material-symbols:arrow-back-ios-rounded" width="18" color="black" /></button>
                     <div className={styles.rendering}>
                         {back[backIndex].icon}
                         {back[backIndex].name}
                     </div>
-                    <button onClick={backMorehandler} className={styles.btnLogo}><Icon icon="material-symbols:arrow-back-ios-rounded" width="20" rotate={2} /></button>
+                    <button onClick={backMorehandler} className={styles.btnLogo}><Icon icon="material-symbols:arrow-back-ios-rounded" width="20" rotate={2} color="black" /></button>
                 </div>
             </div>
         </div>
@@ -161,19 +162,19 @@ function Main() {
         <div className={styles.imgContainer}>
             <a target='_blank' href='https://flex-agenda.vercel.app'><img className={`${styles.project} ${styles.flexagenda}`} src={flexagenda} alt='flexagenda'/></a>
             <div className={`${styles.projectHover} `}>
-                <h1>Flexagenda es blabla</h1>
+                <h4 className={styles.textPage}>Flexagenda es un sistema de gestion de turnos donde un profesional puede compartir su link y sus clientes pueden sacar turno dependiendo disponibilidad y también pagarlo. Puedes ver el repositorio en mi github.</h4>
             </div>
         </div>
         <div className={styles.imgContainer}>
             <a target='_blank' href='https://flex-agenda.vercel.app'><img className={`${styles.project} ${styles.rick}`} src={rick} alt='flexagenda'/></a>
             <div className={`${styles.projectHover} `}>
-                <h1>Flexagenda es blabla</h1>
+                <h4 className={styles.textPage}>Rick & Morty the Page Web fue mi primer proyecto, consiste en consumir la API de Rick and Morty, ordernarlos, hacer un paginado, filtrarlos, dependiendo lo que quiera hacer el usuario. Puedes ver el repositorio en mi github.</h4>
             </div>
         </div>
         <div className={styles.imgContainer}>
             <a target='_blank' href='https://deploy-pi-food.vercel.app/'><img className={`${styles.project} ${styles.wikifoods}`} src={wikifoods} alt='flexagenda'/></a>
             <div className={`${styles.projectHover} `}>
-                <h1>Flexagenda es blabla</h1>
+                <h4 className={styles.textPage}>WikiFoods es mi proyecto individual presentado en Henry Bootcamp, consiste en consumir una API (foodAPI) y con las recetas ordernarlas, filtrarlas, buscarlas, crear nuevas, etc. Puedes ver el repositorio de Backend y Frontend en mi github.</h4>
             </div>
         </div>
         {/* <div>
@@ -181,7 +182,7 @@ function Main() {
         </div> */}
     </div>
     <div  className={styles.contacts}>
-        <h2>Mi nombre es Axel Escobar Schneider</h2>
+        <Mailer/>
     </div>
     <div className={styles.footer}>
         <h3>All rights reserved. Axel Escobar Fullstack Developer</h3>
