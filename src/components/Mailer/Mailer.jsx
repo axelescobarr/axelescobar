@@ -3,6 +3,7 @@ import s from './Mailer.module.css';
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
 import { Icon } from '@iconify/react';
+import cv from '../Navbar/CV.pdf'
 
 export const Mailer = () => {
 
@@ -70,6 +71,9 @@ export const Mailer = () => {
         {error && <h4 className={s.error}>{error}</h4>}
         {!error && <button type='submit'>Enviar</button>}
       </form>
+      <div className={s.descargaContainer}>
+        <a className={s.linkCV} target='_blank' href={cv}>Descargar CV</a>
+      </div>
       <div className={s.linksContainer}>
         <div className={s.iconContainer}>
           <a target='_blank' href='https://www.linkedin.com/in/axel-escobar-schneider/'><Icon icon="pajamas:linkedin" width="40" /></a>
@@ -81,6 +85,7 @@ export const Mailer = () => {
           <a target='_blank' href='https://wa.me/540344515574306'><Icon icon="mingcute:whatsapp-fill" width="40" /></a>
         </div>
       </div>
+      
     </div>
   )
 }

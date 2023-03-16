@@ -12,7 +12,7 @@
     height: 100vh;
     background-image: url(../../imagenes/pared4.jpg);
     background-size: cover;
-}
+} 
 
 .avatar{
     margin-bottom: 0;
@@ -242,6 +242,7 @@
         color: white;
         width: 40vh;
         height: 30%;
+        margin-top: 10vh;
     }
 
     .contenedor{
@@ -249,21 +250,38 @@
         height: 100%;
         background-color: white;
         border-radius: 1rem;
-        border-top: 4px solid rgb(94, 232, 189);
-        border-right: 4px solid rgb(94, 232, 189);
-        border-left: 4px solid rgb(94, 232, 189);
-        border-bottom: 4px solid rgb(94, 232, 189);
+        border-top: 4px solid rgb(226, 162, 105);
+        border-right: 4px solid rgb(226, 162, 105);
+        border-left: 4px solid rgb(226, 162, 105);
+        border-bottom: 4px solid rgb(226, 162, 105);
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         margin: 1rem;
     }
+    .contenedor:hover {
+        animation-name: jello;
+            -webkit-animation-name: jello;
+            -moz-animation-name: jello;
+        animation-duration: 0s;
+            -webkit-animation-duration: 0s;
+            -moz-animation-duration: 0s;
+        transform-origin: center;
+            -webkit-transform-origin: center;
+            -moz-transform-origin: center;
+    }
     .textContPara{
         margin-top: 1rem;
         font-size: 1rem;
-        width: 30vh;
+        width: 35vh;
         font-family: 'Sen', sans-serif;
+    }
+    .icon{
+        margin-top: 0.5rem;
+    }
+    .imgContainer:first-child{
+        margin-top: 15vh;
     }
 }
 
@@ -359,6 +377,7 @@
         .project{
             width: 40vh;
             position: relative;
+            border-radius: 1.7rem 1.7rem 0 0;
         }
         .flexagenda{
             margin-top: 2rem;
@@ -366,14 +385,30 @@
 
         .projectHover{
             width: 40vh;
-            height: 21vh;
+            height: 17vh;
             position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            border-radius: 0 0 1.7rem 1.7rem;
+        }
+        .textPage{
+            margin-top: 0;
+            color: aliceblue;
+
         }
         .rick{
             height: 21vh;
         }
         .projects{
             height: 150vh;
+        }
+        .project:hover{
+            transform: translatey(0px);
+            -webkit-transform: translatey(0px);
+            -moz-transform: translatey(0px);
+            cursor: pointer;
         }
     }
            

@@ -142,11 +142,33 @@
 @media (max-width: 768px){
     .text{
         width: 70%;
+        height: 40vh;
         flex-direction: column;
         margin-bottom: 25vh;
+
     }
     .logoContainer{
          margin-bottom: 15rem;
+    }
+    .ilustracion{
+        display: none;
+    }
+    .logoContainer{
+        margin-bottom: 13vh;
+    }
+    .btn{
+        margin: 0 auto;
+        width: 40vw;
+        left: 30vw;
+        color: rgb(0, 0, 0);
+        background-color: rgb(225, 187, 154);
+        height: 7vh;
+        box-shadow: 0px 0px 41px -4px rgb(241, 148, 67);
+        -webkit-box-shadow: 0px 0px 41px -4px rgb(241, 148, 67);
+        -moz-box-shadow: 0px 0px 41px -4px rgb(241, 148, 67);
+    }
+    .headerContent{
+        width: 100vw;
     }
 }
 
