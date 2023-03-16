@@ -70,6 +70,10 @@
         text-align: center;
 
     }
+
+    .mainContainer{
+        height: 92vh;
+    }
 }
 
 .link{
