@@ -166,7 +166,7 @@ function Main() {
             </div>
         </div>
         <div className={styles.imgContainer}>
-            <a target='_blank' href='https://flex-agenda.vercel.app'><img className={`${styles.project} ${styles.rick}`} src={rick} alt='flexagenda'/></a>
+            <a target='_blank' href='https://rick-morty-app-lyart.vercel.app/'><img className={`${styles.project} ${styles.rick}`} src={rick} alt='flexagenda'/></a>
             <div className={`${styles.projectHover} `}>
                 <h4 className={styles.textPage}>Rick & Morty the Page Web fue mi primer proyecto, consiste en consumir la API de Rick and Morty, ordernarlos, hacer un paginado, filtrarlos, dependiendo lo que quiera hacer el usuario. Puedes ver el repositorio en mi github.</h4>
             </div>
